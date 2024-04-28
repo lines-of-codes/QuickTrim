@@ -43,8 +43,8 @@ impl AboutDialog {
         add_text_with_style(&mut buf, &mut sbuf, "QuickTrim", "B");
         buf.append("\n");
         buf.append(format!("QuickTrim version: {}\n", env!("CARGO_PKG_VERSION")).as_str());
-        buf.append("QuickTrim is a program allowing you to trim your media files quickly.");
-        buf.append("This program is licensed under the GNU GPLv3 license.");
+        buf.append("QuickTrim is a program allowing you to trim your media files quickly. ");
+        buf.append("This program is licensed under the GNU GPLv3 license. ");
         buf.append("This software uses libraries from the FFmpeg project under the GPLv3 license.");
 
         let mut text = TextDisplay::new(15, 10, win_width - 30, win_height - 50, "");
